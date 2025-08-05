@@ -53,7 +53,7 @@ class Version:
                     return False
                 return a < b
 
-        # longer prerelease has less value
+        # larger set has a higher precedence
         return len(pre1) < len(pre2)
 
 
